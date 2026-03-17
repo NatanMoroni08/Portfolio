@@ -1,7 +1,7 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faDocker } from '@fortawesome/free-brands-svg-icons';
 import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
@@ -70,7 +70,7 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
+                    <FontAwesomeIcon icon={faDocker} size="3x"/>
                     <h3>Ferramentas e Automação</h3>
                     <p>Utilizo ferramentas modernas para otimizar o fluxo de trabalho, incluindo Git para versionamento de código, Docker para containerização de aplicações e Python para automação de processos e análise de dados.</p>
                     <div className="flex-chips">
