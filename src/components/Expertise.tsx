@@ -48,7 +48,7 @@ function Expertise() {
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
                     <h3>Desenvolvimento de Software</h3>
-                    <p>Com experiência em desenvolvimento frontend e backend, construo interfaces reativas e modernas com React e TypeScript, e desenvolvo APIs robustas e escaláveis com Java (Spring Boot) e Python.</p>
+                    <p>Desenvolvedor com experiência em frontend e backend, atuando na criação de interfaces modernas com React e TypeScript, além do desenvolvimento de APIs robustas utilizando Java e Spring Boot.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tecnologias:</span>
                         {labelsFirst.map((label, index) => (
@@ -70,9 +70,9 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
+                    <FontAwesomeIcon icon={faPython} size="3x"/>
                     <h3>Ferramentas e Automação</h3>
-                    <p>Utilizo ferramentas modernas para otimizar o fluxo de trabalho, incluindo Git para versionamento, Docker para containerização de aplicações e bibliotecas Python para automação de processos e análise de dados.</p>
+                    <p>Utilizo ferramentas modernas para otimizar o fluxo de trabalho, incluindo Git para versionamento de código, Docker para containerização de aplicações e Python para automação de processos e análise de dados.</p>
                     <div className="flex-chips">
                         <span className="chip-title">Tecnologias:</span>
                         {labelsThird.map((label, index) => (
