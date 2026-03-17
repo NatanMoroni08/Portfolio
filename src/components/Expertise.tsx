@@ -1,7 +1,8 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faReact, faPython, faDocker } from '@fortawesome/free-brands-svg-icons';
+import { faChartLine } from '@fortawesome/free-solid-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
@@ -9,50 +10,47 @@ const labelsFirst = [
     "React",
     "TypeScript",
     "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+    "Java",
+    "Spring Boot",
+    "HTML",
+    "CSS",
+    "Bootstrap",
 ];
 
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+    "Power BI",
+    "DAX",
+    "Power Query",
+    "SQL",
+    "MySQL",
+    "SQL Server",
+    "Excel",
+    "ETL",
 ];
 
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
+    "Python",
+    "Pandas",
+    "Numpy",
     "Streamlit",
+    "Docker",
+    "Git",
+    "GitHub",
+    "Power Automate",
 ];
 
 function Expertise() {
     return (
     <div className="container" id="expertise">
         <div className="skills-container">
-            <h1>Expertise</h1>
+            <h1>Habilidades</h1>
             <div className="skills-grid">
                 <div className="skill">
                     <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
+                    <h3>Desenvolvimento de Software</h3>
+                    <p>Com experiência em desenvolvimento frontend e backend, construo interfaces reativas e modernas com React e TypeScript, e desenvolvo APIs robustas e escaláveis com Java (Spring Boot) e Python.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tecnologias:</span>
                         {labelsFirst.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -60,11 +58,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
+                    <FontAwesomeIcon icon={faChartLine} size="3x"/>
+                    <h3>Análise de Dados e Business Intelligence</h3>
+                    <p>Focado na construção de soluções analíticas, atuo desde a modelagem e integração de dados (ETL) até a criação de dashboards gerenciais no Power BI, utilizando DAX para métricas complexas e apoiando a tomada de decisão.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tecnologias:</span>
                         {labelsSecond.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
@@ -72,11 +70,11 @@ function Expertise() {
                 </div>
 
                 <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
+                    <FontAwesomeIcon icon={faDocker} size="3x"/>
+                    <h3>Ferramentas e Automação</h3>
+                    <p>Utilizo ferramentas modernas para otimizar o fluxo de trabalho, incluindo Git para versionamento, Docker para containerização de aplicações e bibliotecas Python para automação de processos e análise de dados.</p>
                     <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
+                        <span className="chip-title">Tecnologias:</span>
                         {labelsThird.map((label, index) => (
                             <Chip key={index} className='chip' label={label} />
                         ))}
