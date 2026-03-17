@@ -1,0 +1,134 @@
+@import './variables';
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--bg-color);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.nav-links a {
+    margin: 0 15px;
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 1rem;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -5px;
+    left: 50%;
+    background-color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-action {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1001;
+    top: 0;
+    right: 0;
+    background-color: var(--bg-color);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.5);
+}
+
+.sidenav.active {
+    width: 250px;
+}
+
+.sidenav-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px 30px 25px;
+    position: absolute;
+    top: 20px;
+    left: 0;
+    right: 0;
+}
+
+.sidenav-logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.sidenav-links {
+    padding: 20px 25px;
+}
+
+.sidenav a {
+    padding: 15px 8px 15px 0px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: var(--primary-color);
+}
+
+.close-icon {
+    cursor: pointer;
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
