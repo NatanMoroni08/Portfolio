@@ -22,3 +22,9 @@ yarn-error.log*
 
 # Arquivos internos do projeto
 README_INTERNO.md
+
+# wrangler files
+.wrangler
+.dev.vars*
+!.dev.vars.example
+!.env.example
